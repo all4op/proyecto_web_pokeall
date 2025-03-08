@@ -7,6 +7,19 @@ body, html {
   font-style: normal;
   margin: 0 auto;
 }
+body button, html button {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  background: rgb(253, 164, 87);
+  background: linear-gradient(90deg, rgb(253, 164, 87) 0%, rgb(173, 131, 251) 100%);
+  border: 0;
+  border-radius: 4px;
+  padding: 10px;
+  color: white;
+}
 body h2, html h2 {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
@@ -39,4 +52,23 @@ body main .home-hero .hero-text, html main .home-hero .hero-text {
   right: 20px;
   bottom: 20px;
   text-align: right;
+}
+body main .section-more-info, html main .section-more-info {
+  padding: 20px 0 40px;
+  text-align: center;
+  font-size: 18px;
+}
+body main .section-more-info .section-more-info-text, html main .section-more-info .section-more-info-text {
+  margin-bottom: 40px;
+}
+body main .separator, html main .separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+body main .separator img, html main .separator img {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
