@@ -5,4 +5,38 @@ body, html {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  margin: 0 auto;
+}
+body h2, html h2 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+body .navbar, html .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(32, 36, 66);
+}
+body .navbar .main-logo, html .navbar .main-logo {
+  margin: 40px 20px;
+}
+body .navbar .menu-svg, html .navbar .menu-svg {
+  margin: 40px 20px;
+}
+body main .home-hero, html main .home-hero {
+  position: relative;
+  width: 100%;
+}
+body main .home-hero img, html main .home-hero img {
+  height: auto;
+  width: 100%;
+}
+body main .home-hero .hero-text, html main .home-hero .hero-text {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  text-align: right;
 }/*# sourceMappingURL=styles.css.map */
