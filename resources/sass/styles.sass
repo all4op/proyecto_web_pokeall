@@ -49,12 +49,35 @@ body, html
             margin: 20px 20px
 
         .menu
+            .menu-logo-svg
+                position: absolute
+                top: 20px
+                left: 20px
             .menu-item
-                    color: white
+                color: white
+                display: flex
+                gap: 10px
+                justify-content: center
+                align-items: center
+                margin-bottom: 20px
+            .menu-footer
+                position: absolute
+                bottom: 8%
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                &:after
+                    width: 100px
+                    content: ""
+                    background-color: rgba(255, 165, 82, 1)
+                    height: 2px
+                ul
                     display: flex
+                    flex-direction: row
                     gap: 10px
-                    justify-content: center
-                    align-items: center
+                    li
+                        margin-bottom: 0
 
         #menu-button-check
             display: none
@@ -181,6 +204,20 @@ body, html
                 display: flex
                 font-size: 1.5em
                 color: white
-                margin: 1em 0
+                margin-bottom: .8em
                 list-style: none
-                    
+            .menu-item-cnt
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                &:after
+                    width: 30px
+                    content: ""
+                    background-color: rgba(255, 165, 82, 0.4)
+                    height: 2px
+                &:last-child
+                    &:after
+                        content: ""
+                        display: none
+                
