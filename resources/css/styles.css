@@ -32,6 +32,10 @@ body h2, html h2 {
 }
 body a, html a {
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent !important;
+}
+body label, html label {
+  -webkit-tap-highlight-color: transparent !important;
 }
 body .navbar, html .navbar {
   display: flex;
@@ -90,6 +94,24 @@ body .home-cnt .separator, html .home-cnt .separator {
 }
 body .home-cnt .separator img, html .home-cnt .separator img {
   width: 100%;
+}
+body .home-cnt .section-more-stats, html .home-cnt .section-more-stats {
+  padding: 20px 40px;
+}
+body .home-cnt .section-more-stats .section-more-stats-title, html .home-cnt .section-more-stats .section-more-stats-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+body .home-cnt .section-more-stats .section-more-stats-title:after, html .home-cnt .section-more-stats .section-more-stats-title:after {
+  width: 70%;
+  content: "";
+  background-color: rgb(255, 165, 82);
+  height: 2px;
+}
+body .home-cnt .section-more-stats .section-more-stats-text, html .home-cnt .section-more-stats .section-more-stats-text {
+  padding-bottom: 10px;
 }
 
 @media (min-width: 768px) {
