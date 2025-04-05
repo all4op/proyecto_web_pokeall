@@ -82,6 +82,27 @@ body, html
         #menu-button-check
             display: none
 
+        //Animación del SVG hamburguesa
+
+        .menu-btn 
+            width: 34px
+            height: 34px
+            cursor: pointer
+
+            .line 
+                stroke: white
+                stroke-width: 2px
+                stroke-linecap: round
+                transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out
+                transform-origin: center
+            &.active 
+                .line-top 
+                    transform: translateY(3.5px) translateX(-4px) rotate(45deg)
+                .line-mid 
+                    opacity: 0
+                .line-bot 
+                    transform: translateY(-3.5px) translateX(-4px) rotate(-45deg)
+
         
     .home-cnt
         padding-top: 73px

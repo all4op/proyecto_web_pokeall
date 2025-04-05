@@ -87,6 +87,27 @@ body .navbar .menu .menu-footer ul li, html .navbar .menu .menu-footer ul li {
 body .navbar #menu-button-check, html .navbar #menu-button-check {
   display: none;
 }
+body .navbar .menu-btn, html .navbar .menu-btn {
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+body .navbar .menu-btn .line, html .navbar .menu-btn .line {
+  stroke: white;
+  stroke-width: 2px;
+  stroke-linecap: round;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform-origin: center;
+}
+body .navbar .menu-btn.active .line-top, html .navbar .menu-btn.active .line-top {
+  transform: translateY(3.5px) translateX(-4px) rotate(45deg);
+}
+body .navbar .menu-btn.active .line-mid, html .navbar .menu-btn.active .line-mid {
+  opacity: 0;
+}
+body .navbar .menu-btn.active .line-bot, html .navbar .menu-btn.active .line-bot {
+  transform: translateY(-3.5px) translateX(-4px) rotate(-45deg);
+}
 body .home-cnt, html .home-cnt {
   padding-top: 73px;
 }
